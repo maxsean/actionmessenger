@@ -9,6 +9,13 @@
   </div>
 
   <div class="field">
+    <%= f.label :handle %><br />
+    <%= f.text_field :handle, autofocus: true %>
+  </div>
+
+  <%= f.hidden_field :icon_num, value: rand(1..3) %>
+
+  <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
