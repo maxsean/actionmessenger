@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 20171118203057) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
+    t.string "handle"
+    t.string "icon_num"
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
